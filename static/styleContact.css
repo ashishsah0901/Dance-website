@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Akaya Telivigala', cursive, 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    height: 561px;
+}
+
+.container::before {
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 89%;
+    position: absolute;
+    opacity: 0.6;
+    background: url('/static/bg.jpg') no-repeat center center/cover;
+}
+
+.container h1 {
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.myForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myInput {
+    width: 45%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    outline: none;
+    border-radius: 13px;
+    border: 2px solid black;
+}
+
+.btn {
+    padding: 12px 16px;
+    font-size: 18px;
+    border: 2px solid red;
+    border-radius: 12px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    outline: none;
+    margin: 25px;
+}

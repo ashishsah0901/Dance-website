@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Akaya Telivigala', cursive, 'Arial Narrow', Arial, sans-serif;
+}
+
+#logo {
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0px 14px;
+    font-size: 28px;
+    margin-right: 40px;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#logo img {
+    height: 40px;
+    filter: invert(1);
+}
+
+#navbar {
+    background-color: black;
+    padding: 13px 14px;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar li a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 13px 35px;
+}
+
+#navbar li a:hover {
+    color: rgb(255, 238, 0);
+    font-weight: bold;
+}
+
+#introsection {
+    color: black;
+    text-shadow: 3px 3px 3px rgb(206, 201, 201);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.7rem;
+    height: 300px;
+    padding-bottom: 40px;
+}
+
+#introsection::before {
+    background: url('/static/image.jpg') no-repeat center center/cover;
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#introsectio div.small {
+    font-size: 1.8rem;
+    padding: 6px;
+}
+
+#classsection {
+    height: 330px;
+    background-color: violet;
+    width: 100%;
+    margin: auto;
+}
+
+#classsection h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    height: 200px;
+}
+
+.card h3 {
+    text-align: center;
+    margin-top: 11px;
+}
+
+.card-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img {
+    height: 130px;
+    padding: 0px 14px;
+    margin: 5px 9px;
+}
+
+.card-img img {
+    height: inherit;
+}
+
+.card-content {
+    padding: 0px 10px;
+}
+
+.card-content p {
+    font-size: 20px;
+}
+
+#sponsorsection {
+    height: 250px;
+    background-color: yellow;
+}
+
+#sponsorsection h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.sponsor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.sponsorImage {
+    height: 30%;
+    margin: 30px;
+}
+
+#footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: black;
+    font-size: 15px;
+}

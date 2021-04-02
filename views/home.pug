@@ -1,0 +1,44 @@
+extends base.pug 
+
+block scripts 
+    script 
+        include ../static/script.js  
+
+block styles 
+    style 
+        include ../static/style.css 
+
+block content 
+    section#about
+    section#introsection 
+        div Welcome to Ashish's Dance Academy 
+        div.small Eat Sleep Dance Repeat 
+    section#classsection 
+        h2 Our Courses  
+        div.card 
+            h3 Hip-Hop 
+            div.card-box 
+                div.card-img 
+                    img(src="/static/hip-hop.jpg")
+                div.card-content 
+                    p This is the best academy for learning Hip-Hop 
+        div.card 
+            h3 Break Dance
+            div.card-box 
+                div.card-img 
+                    img(src="/static/break-dance.jpg")
+                div.card-content 
+                    p This is the best academy for learning Break Dance 
+        div.card 
+            h3 Salsa
+            div.card-box 
+                div.card-img 
+                    img(src="/static/salsa.jpg")
+                div.card-content 
+                    p This is the best academy for learning Salsa 
+    section#sponsorsection 
+        h2 Our Sponsors 
+        div.sponsor 
+            img(src="/static/apple-logo.png", alt="Apple Sponsor Logo", class="sponsorImage")
+            img(src="/static/microsoft-logo.png", alt="Miscrosoft Sponsor Logo", class="sponsorImage")
+            img(src="/static/google_logo.png", alt="Google Sponsor Logo", class="sponsorImage")
